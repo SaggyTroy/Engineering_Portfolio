@@ -1,5 +1,5 @@
 ---
-date: 2025-11-02 07:17:45
+date: 2025-11-03 07:17:45
 layout: post
 title: "L4TE | Microneedle Medical Devices"
 subtitle: Research Internship Overview
