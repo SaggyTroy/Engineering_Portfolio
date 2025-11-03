@@ -15,34 +15,28 @@ layout: main
 {% endif %}
 
 <main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
-    {% if site.show_hero and paginator == nil or paginator.page == 1 %}
+    <!-- {% if site.show_hero and paginator == nil or paginator.page == 1 %} -->
         <!-- Hero -->
-        {% assign featured = posts.first %}
-        <section class="hero" style="background-image: url({{ featured.image }})">
+        <!-- {% assign featured = posts.first %} -->
+        <section class="hero" style="background-image: url('{{ site.baseurl }}/assets/img/uploads/calipers.png')">
             <div class="pixels"></div>
             <div class="gradient"></div>
             <div class="content">
-                <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
-                    {% if site.date_format == nil %}
-                        {{ featured.date | date: "%m.%d.%Y" }}
-                    {% else %}
-                        {{ featured.date | date: site.date_format }}
-                    {% endif %}
-                </time>
-                <h1 class="title">{{ featured.title }}</h1>
-                <p class="description">{{ featured.subtitle }}</p>
-                <div class="buttons">
-                    <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
-                        <svg><use xlink:href="#icon-read"></use></svg>
-                        <span>{{ site.translations.button.read_now | default: "Read Now" }}</span>
-                    </a>
+                <div class="hero-block" style="background-color: rgba(0,0,0,0.4); display: inline-block; padding: 0.75rem 1rem; border-radius: 4px; color: #fff; max-width: 90%;">
+                    <h1 class="title">Joseph Mei </h1>
+                    <p class="description">Hi, I'm a Mechanical Engineering Undergraduate at the Massachusetts Institute of Technology.
+                        I enjoy learning and applying skills in interdisciplinary fields through personal projects.
+                        <br><br>
+                            Thanks for checking out my portfolio! I hope you enjoy the ride!
+                    </p>
                 </div>
             </div>
         </section>
-    {% endif %}
+    <!-- {% endif %} -->
+
     <!-- Posts -->
     <section id="grid" class="row flex-grid">
-        {% for post in posts offset: offset %}
+        {% for post in posts offset%}
             <article class="box-item">
                 <span class="category">
                     <a href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ post.category }}">

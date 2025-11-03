@@ -1,26 +1,25 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Engineering Portfolio | Joseph Mei
+title: Engineering Portfolio | Joseph Mei
+description: Engineering Portfolio of Joseph Mei, showcasing various projects and technical skills.
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - Portfolio
+  - Engineering
+  - MIT
+  - Joseph Mei
+  - Projects
 show_hero: true
 menu:
   - title: Home
     url: /
   - title: About
     url: /about
+  - title: Resume
+    url: /Resume
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
+email: jmei0311@mit.edu
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: N/A
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id: N/A

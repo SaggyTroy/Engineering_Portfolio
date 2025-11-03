@@ -66,7 +66,7 @@
   ul,
   ol,
   iframe {
-    @include center(rem(800px));
+    @include center(rem(1100px));
     @include mainFont(400);
     font-size: rem(17px);
     line-height: rem(30px);
@@ -233,7 +233,7 @@
   }
 
   blockquote {
-    @include center(rem(730px));
+    @include center(rem(1000px));
     border-left: rem(5px) solid $texts;
     padding: 0 rem(10px);
     margin: rem(30px) auto;
@@ -256,7 +256,7 @@
   }
 
   hr {
-    @include center(rem(760px));
+    @include center(rem(1100px));
     border: 1px solid $lightGray;
     margin: 50px auto;
   }

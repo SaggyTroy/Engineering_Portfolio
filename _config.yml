@@ -1,47 +1,46 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Engineering Portfolio | Joseph Mei
+title: Engineering Portfolio | Joseph Mei
+description: Engineering Portfolio of Joseph Mei, showcasing various projects and technical skills.
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - Portfolio
+  - Engineering
+  - MIT
+  - Joseph Mei
+  - Projects
 show_hero: true
 menu:
   - title: Home
     url: /
   - title: About
     url: /about
+  - title: Resume
+    url: /Resume
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
+email: jmei0311@mit.edu
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: N/A
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id: N/A
 
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: SaggyTroy
+facebook_username: joseph.mei.7330
+twitter_username: N/A
+instagram_username: saggytroy
+linkedin_username: joseph-mei2
+medium_username: N/A
 
 
 # Posts Settings
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
-two_columns_layout: true
+two_columns_layout: false
 
 
 # Advanced Settings
