@@ -22,12 +22,12 @@ paginate: false
         <img src="{{ page.image }}" alt="Featured image" class="post-cover" style="max-width:400px;width:100%;height:auto;flex:0 0 320px;display:block;margin:0 8px 0 0;">
         <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
             <h3 style="margin:0 0 0.5rem;padding-top: 0;">Introduction</h3>
-            <p style="margin:0;">For the Model Year 2026 season, my team is pioneering its <strong>first-ever driverless racecar</strong>, a significant leap toward competing in the Formula Student Driverless event. To enable real-world validation of our robust autonomous algorithms, I led the design, manufacturing, and integration of a <strong>high-torque power steering system</strong> for the MY25 race car. This retrofit replaces manual steering with an electromechanical actuator, enabling precise, rapid control for autonomous testing and positioning MIT Motorsports for success in driverless racing.</p>
+            <p style="margin:0;">For the Model Year 2026 season, my team is pioneering its <strong>first-ever driverless racecar</strong>, a significant leap toward competing in the Formula Student Driverless event. To enable real-world validation of our autonomous algorithms, I led the design, manufacturing, and integration of a <strong>high-torque power steering system</strong> for the MY25 race car. This retrofit replaces manual steering with an electromechanical actuator, enabling precise, rapid control and positioning MIT Motorsports for success in driverless racing. Additionally, as testing for the MY26 vehicle began early in the fall, the project ran over the summer term, offering a valuable opportunity to deliver under tight timelines and manage overlapping commitments.</p>
         </div>
     </div>
     <div style="flex:0;">
-        <h3 style="margin:0 0 0.5rem;">Sponsorship Outreach</h3>
-        <p style="margin:0 0 0.5rem;">Starting off this power steering project required <strong>emailing motor companies for possible sponsorships</strong>. As I was working with a very limited budget off the remaining funds from the MY25 season, securing a motor sponsorship was key to creating a reliable, robust system. After researching and emailing dozens of different companies, I was very fortunate to have secured a sponsorship with <strong>Maxon Motor</strong>, a motor company known for being a leading manufacturer of high-precision, high-quality electric drive systems. With this sponsorship, I not only secured a <strong>motor set valued at over $2500 consisting of a BLDC Flat motor, a planetary gearbox, a MILE encoder, and a high-end motor controller</strong>, but I also guaranteed a <strong>continuing partnership and motor supply for the MY26 season.</strong></p>
+        <h2 style="margin:0 0 0.5rem; text-align: center">Sponsorship Outreach</h2>
+        <p style="margin:0 0 0.5rem;">Starting off this power steering project required <strong>emailing motor companies for possible sponsorships</strong>. As I was working with a very limited budget off the remaining funds from the MY25 season, securing a motor sponsorship was key to creating a reliable, robust system. After researching and emailing dozens of different companies, I was very fortunate to have secured a sponsorship with <strong>Maxon Motor</strong>, a motor company known for being a leading manufacturer of high-precision, high-quality electric drive systems. With this sponsorship, I not only secured a <strong>motor set valued at over $2500</strong> consisting of a BLDC Flat motor, a planetary gearbox, a MILE encoder, and a high-end motor controller, but I also guaranteed a <strong>continuing partnership and motor supply for the MY26 season.</strong></p>
         <section style="display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;margin:40px auto;max-width:1200px;">
         <figure style="flex:1 1 45%;max-width:300px;text-align:center;margin:0;">
             <img src="/assets/img/uploads/motor.jpeg" alt="Left image"
@@ -48,8 +48,9 @@ paginate: false
             </figcaption>
         </figure>
         </section>
-        <h3 style="margin:0 0 0.5rem;">Design Overview</h3>
-        <p style="margin:0 0 0.5rem;">For the design process, I first started by identifying <strong>key design requirements</strong> that govern the overarching system. To determine the <strong>steering torque</strong> required to actuate the car, I used a force sensor to measure the force required to turn the tires when the car is stationary, providing an upper bound for the torque requirement. To determine the <strong>steering speed</strong>, I used telemetry data from past competitions as well as GoPro footage of drivers on testing trips to get a rough estimate of the max steering speed required by the motor. These measurements allowed me to pick and size a capable motor for the system.</p>
+        <h2 style="margin:0 0 0.5rem; text-align: center">Design Overview</h2>
+        <h3 style="margin:0 0 0.5rem;padding-top:0">Laying Out Design Requirements</h3>
+        <p style="margin:0 0 0.5rem;">For the design process of power steering, I first started by identifying <strong>key design requirements</strong> that govern the overarching system. To determine the <strong>steering torque</strong> required to actuate the car, I used a force sensor to measure the force required to turn the tires when the car is stationary, providing an upper bound for the torque requirement. To determine the <strong>steering speed</strong>, I used telemetry data from past competitions as well as GoPro footage of drivers on testing trips to get a rough estimate of the max steering speed required by the motor. These measurements allowed me to pick and size a capable motor for the system.</p>
         <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
             <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
                 <h4 style="padding-top:0;padding-bottom: 0"> Some Key Design Requirements: </h4>
@@ -75,14 +76,14 @@ paginate: false
             </figure>
         </div>
         <br>
-        <section style="display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;margin:40px auto;max-width:1200px;">
-        <!-- ===== CODE BLOCK (LEFT) ===== -->
-        <section style="display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;margin:40px auto;max-width:1400px;">
+        <br>
+        <p style="margin:0 0 0.5rem;">Below is also a MATLAB Script I created to model the temperature of the motor over time given a constant power input. The script uses basic thermodynamic principles, modeling the system as a thermal circuit using a differential equation.</p>
+        <section style="display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin:0 auto;max-width:1400px;padding:0;">
             <!-- ===== CODE BLOCK (LEFT, WIDER, NO BACKGROUND) ===== -->
             <div style="flex:1 1 65%;max-width:850px;color:#222;
-                        padding:10px;font-family:'Courier New', monospace;
-                        font-size:0.95rem;line-height:1.5;overflow-x:auto;">
-            <pre><code>clc; close all; clear
+                        padding:0px;font-family:'Courier New', monospace;
+                        font-size:0.25rem;line-height:1.15;overflow-x:auto;">
+            <pre style="margin:0;"><code>clc; close all; clear
 % Motor Thermal Model Simulation
 % CHANGE PARAMS HERE
 T_a = 25;                        % Ambient temperature (C)
@@ -144,83 +145,119 @@ odefun = @(t, T) [
                 </figcaption>
             </figure>
         </section>
-        <p style="margin:0 0 0.5rem;padding-top: 20px;">I then performed <strong>structural hand calculations</strong> to inform my modeling, drawing FBDs, analyzing shear and bending diagrams, and performing lug analyses. These calculations were used to optimize the mass and geometry of the system components to ensure minimal deflection while being able to withstand the heavy applied loads.</p>
-        <div class="carousel-pair"
-            style="display:flex;justify-content:center;align-items:flex-start;gap:40px;flex-wrap:wrap;margin:20px auto;text-align:center;">
-        <!-- ===== LEFT CAROUSEL ===== -->
-        <figure style="flex:0 1 480px;max-width:600px;margin:0;position:relative;">
+        <h3 style="margin:0 0 0.5rem;">Structural Calculations</h3>
+        <p style="margin:0 0 0.5rem;">Next in the design process, I performed <strong>structural hand calculations</strong> and <strong>belt/pulley selections</strong>. The structural calculations were a simple beam bending problem to determine the internal moment and shear forces as well as the maximum deflection. Resolution and backlash were big concerns for the performance of the autonomous system, so minimizing deflection and ensuring a properly sized and tensioned belt were vital to the design process.</p>
+        <figure style="max-width:900px;width:100%;margin:0px auto;text-align:center;position:relative;">
             <div class="image-carousel"
-                style="max-width:600px;width:100%;height:250px;display:flex;
-                        justify-content:center;align-items:flex-start;overflow:hidden;
-                        border-radius:12px;position:relative;margin:0 auto;">
-            <img src="/assets/img/uploads/pratio.png" class="carousel-image left active" alt="pedal ratio"
-                style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-            <img src="/assets/img/uploads/brake.png" class="carousel-image left" alt="brake"
-                style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-            <img src="/assets/img/uploads/throttle.png" class="carousel-image left" alt="throttle"
-                style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-            <img src="/assets/img/uploads/base.png" class="carousel-image left" alt="base"
-                style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-            <button class="carousel-btn left-prev"
-                    style="position:absolute;top:50%;left:15px;transform:translateY(-50%);
+                style="max-width:900px;width:100%;height:600px;display:flex;
+                        justify-content:center;align-items:center;overflow:hidden;
+                        border-radius:8px;position:relative;margin:0 auto;">
+                <!-- Images -->
+                <img src="/assets/img/uploads/ps_handcalcs.png" class="carousel-image first active" alt="Ergo Design 3"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                <img src="/assets/img/uploads/ps_belt.png" class="carousel-image first" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <!-- Controls -->
+                <button class="carousel-btn first-prev"
+                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
                             background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:40px;height:40px;cursor:pointer;font-size:1.2rem;">‹</button>
-            <button class="carousel-btn left-next"
-                    style="position:absolute;top:50%;right:15px;transform:translateY(-50%);
+                            width:30px;height:30px;cursor:pointer;">‹</button>
+                <button class="carousel-btn first-next"
+                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
                             background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:40px;height:40px;cursor:pointer;font-size:1.2rem;">›</button>
+                            width:30px;height:30px;cursor:pointer;">›</button>
             </div>
-            <figcaption style="margin-top:12px;font-size:1rem;color:#555;">
-            Force and Moment Balance to Determine Stress and Deflection in Pedalbox Components
+            <!-- Caption -->
+            <figcaption style="margin-top:5px;font-size:0.95rem;color:#555;">
+                (1) Beam Bending Calculations to Determine the Deflection and Stress of the Mounting Plate. <br>
+                (2) Selection Considerations for an HTD Neoprene Belt and Pulley.
             </figcaption>
         </figure>
-        <!-- ===== RIGHT CAROUSEL ===== -->
-        <figure style="flex:0 1 480px;max-width:600px;margin:0;position:relative;">
+        <h3 style="margin:0 0 0.5rem;">CAD and Manufacturing</h3>
+        <img src="/assets/img/uploads/powersteering.png" alt="Featured image" style="max-width:400px;width:100%;height:auto;">
+        <p style="margin:0 0 0.5rem;">Lastly, I used <strong>Onshape</strong> to model the power steering assembly in CAD, going through several design review presentations with the team to arrive to the final product. With the CAD ready, a manufacturing plan was set in place to fabricate all the components in-house, which entailed <strong>waterjetting plates</strong>, <strong>turning spacers</strong>, and <strong>milling pulleys.</strong></p>
+        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
+            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
+                <p style="margin:0;">The motor and belt system are mounted to the steering rack using two custom waterjetted plates. The bottom plate features a slotted interface that simplifies alignment and integration with the steering rack. The top plate incorporates a set of precisely positioned slots in an arc, designed to enable accurate belt pretensioning. Pretension is achieved by pivoting the assembly about one bolted joint, allowing controlled adjustment of belt tension and decoupling. </p>
+            </div>
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
             <div class="image-carousel"
-                style="max-width:600px;width:100%;height:250px;display:flex;
-                        justify-content:center;align-items:flex-start;overflow:hidden;
-                        border-radius:12px;position:relative;margin:0 auto;">
-            <img src="/assets/img/uploads/bear1.png" class="carousel-image right active" alt="bearing 1"
-                style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-            <img src="/assets/img/uploads/bear2.png" class="carousel-image right" alt="bearing 2"
-                style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-            <button class="carousel-btn right-prev"
-                    style="position:absolute;top:50%;left:15px;transform:translateY(-50%);
+                style="max-width:400px;width:100%;height:320px;display:flex;
+                        justify-content:center;align-items:center;overflow:hidden;
+                        border-radius:8px;position:relative;margin:0 auto;padding-top:0">
+                <!-- Images -->
+                <img src="/assets/img/uploads/ps_plates.png" class="carousel-image second active" alt="brakecad"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                <img src="/assets/img/uploads/ps_topplate.png" class="carousel-image second" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <img src="/assets/img/uploads/Top_Plate_Drawing.png" class="carousel-image second" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">\
+                <img src="/assets/img/uploads/Bottom_Plate_Drawing.png" class="carousel-image second" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <!-- Controls -->
+                <button class="carousel-btn second-prev"
+                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
                             background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:40px;height:40px;cursor:pointer;font-size:1.2rem;">‹</button>
-            <button class="carousel-btn right-next"
-                    style="position:absolute;top:50%;right:15px;transform:translateY(-50%);
+                            width:30px;height:30px;cursor:pointer;">‹</button>
+                <button class="carousel-btn second-next"
+                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
                             background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:40px;height:40px;cursor:pointer;font-size:1.2rem;">›</button>
+                            width:30px;height:30px;cursor:pointer;">›</button>
             </div>
-            <figcaption style="margin-top:12px;font-size:1rem;color:#555;">
-            Lug Analyses for Tabs
+            <!-- Caption -->
+            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                (1) Mounting Plates Iso View CAD <br> (2) Mounting Plates with Arc Slots Top View CAD <br> (3) Top Plate Technical Drawing <br> (4) Bottom Plate Technical Drawing
             </figcaption>
-        </figure>
+            </figure>
         </div>
         <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
-            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
-                <p style="margin:0;">This is an example of a calculation performed to determine the necessary size of the brake pedal. After completing a force and moment balance to determine the reaction forces, various cuts were taken along the pedal to determine the max shear and tensile forces as well as deflection. This then informed the necessary sizing of the pedal's cross-sectional geometry.</p>
-            </div>
-            <img src="/assets/img/uploads/calcs.png" alt="brake calcs" class="post-cover" style="max-width:600px;width:100%;height:auto;flex:0 0 320px;display:block;margin:0 8px 0 0;">
-        </div>
-        <br>
-        <p style="margin:0 0 0.5rem;padding-top: 20px;">Lastly, after <strong>modeling the pedalbox in CAD using Siemens NX,</strong> I then <strong>manufactured all the components in-house with CNC machinery</strong>, utilizing the lathe, CNC mill, and waterjet to create all the parts with precision.</p>
-        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
-            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
-                <p style="margin:0;">An I-beam design for both the brake and throttle pedal was selected to optimize mass while maintaining structural rigidity. Torsional springs are attached to both to ensure smooth return travel. The pedals were machined from a solid aluminum block on a HAAS VF-2 CNC machine utilizing a CAM file. Custom soft jaws for the brake pedal were also created in the HAAS VF-2 to accommodate the multiple machining operations needed for the brake pedal.</p>
-            </div>
-            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;">
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
             <div class="image-carousel"
                 style="max-width:400px;width:100%;height:320px;display:flex;
                         justify-content:center;align-items:center;overflow:hidden;
                         border-radius:8px;position:relative;margin:0 auto;">
                 <!-- Images -->
-                <img src="/assets/img/uploads/brakecad.png" class="carousel-image fourth active" alt="brakecad"
+                <img src="/assets/img/uploads/steering_column.jpg" class="carousel-image third active" alt="brakecad"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-                <img src="/assets/img/uploads/throttlecad.png" class="carousel-image fourth" alt="Ergo Design 3B"
+                <img src="/assets/img/uploads/ps_column.png" class="carousel-image third" alt="Ergo Design 3B"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-                <img src="/assets/img/uploads/brakejaws.jpg" class="carousel-image fourth" alt="Ergo Design 3B"
+                <img src="/assets/img/uploads/match_drill.jpg" class="carousel-image third" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <!-- Controls -->
+                <button class="carousel-btn third-prev"
+                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">‹</button>
+                <button class="carousel-btn third-next"
+                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">›</button>
+            </div>
+            <!-- Caption -->
+            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                (1) Steering Column and Pulley Mounted Together <br> (2) Steering Column and Pulley CAD <br> (3) Manual Mill Setup for Match-drill
+            </figcaption>
+            </figure>
+            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
+                <p style="margin:0;">To enable belt-driven actuation, system components were modified to mount pulleys onto both the steering column and motor shaft. For the steering column, I used a manual mill to match-drill and ream a through-hole in the pulley and column. This created a very smooth, tight, and snug fit for a shoulder bolt to secure the assembly. For the motor shaft, broaching was initially considered to create the keyseat (which would have been awesome) but none of the machine shops had the correct size. Instead, due to budget constraints, I ordered and used an extended-length endmill to machine the keyseat directly into the pulley.</p>
+            </div>
+        </div>
+        <br>
+        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
+            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
+                <p style="margin:0;">Several 3D-printed components were fabricated to support various aspects of the system. A column sleeve was printed to act as a spacer, ensuring proper pulley height alignment on the steering column. A custom motor hub and cover were designed to provide light water protection—particularly important given the motor’s outrunner configuration. Additionally, pulley flanges were printed as a precautionary measure to mitigate belt slippage. All parts were produced using a Bambu X1-Carbon printer.</p>
+            </div>
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
+            <div class="image-carousel"
+                style="max-width:400px;width:100%;height:320px;display:flex;
+                        justify-content:center;align-items:center;overflow:hidden;
+                        border-radius:8px;position:relative;margin:0 auto;">
+                <!-- Images -->
+                <img src="/assets/img/uploads/3dp.jpg" class="carousel-image fourth active" alt="brakecad"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                <img src="/assets/img/uploads/ps_hub.png" class="carousel-image fourth" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <img src="/assets/img/uploads/ps_pulley.png" class="carousel-image fourth" alt="Ergo Design 3B"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
                 <!-- Controls -->
                 <button class="carousel-btn fourth-prev"
@@ -234,58 +271,7 @@ odefun = @(t, T) [
             </div>
             <!-- Caption -->
             <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                (1) Brake Pedal CAD - (2) Throttle Pedal CAD - (3) Custom-Made Soft Jaws for CNC Milling
-            </figcaption>
-            </figure>
-        </div>
-        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
-            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;">
-            <div class="image-carousel"
-                style="max-width:400px;width:100%;height:320px;display:flex;
-                        justify-content:center;align-items:center;overflow:hidden;
-                        border-radius:8px;position:relative;margin:0 auto;">
-                <!-- Images -->
-                <img src="/assets/img/uploads/tubes.png" class="carousel-image fifth active" alt="brakecad"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-                <img src="/assets/img/uploads/plugs.png" class="carousel-image fifth" alt="Ergo Design 3B"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-                <img src="/assets/img/uploads/plugsreal.jpg" class="carousel-image fifth" alt="Ergo Design 3B"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-                <!-- Controls -->
-                <button class="carousel-btn fifth-prev"
-                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
-                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:30px;height:30px;cursor:pointer;">‹</button>
-                <button class="carousel-btn fifth-next"
-                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
-                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:30px;height:30px;cursor:pointer;">›</button>
-            </div>
-            <!-- Caption -->
-            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                (1) Base Cylinders & Tabs CAD - (2) Side Plugs CAD - (3) Side View of Base
-            </figcaption>
-            </figure>
-            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
-                <p style="margin:0;">Steel circular tubes were selected to reduce mass and deflection under applied forces. The tubes were cut to rough length using a cold saw and then precisely turned to their final dimensions on a lathe. Tabs were cut using a waterjet and accurately reamed on a manual mill to minimize system compliance. The tabs were designed to span the tubes, enhancing structural integrity and ensuring proper alignment for welding. Steel plugs were then welded onto the ends of the base tubes to accommodate quick-release pins and shoulder bolts for the adjustment mechanism. Designed for minimal mass, the plugs were precisely turned on a lathe to meet the tight tolerances of the tubes. The rear tube plug was also tapped to secure the shoulder bolt.
-</p>
-            </div>
-        </div>
-        <br>
-        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
-            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
-                <p style="margin:0;">The pedalbox is mounted to the frame using quick-release pins attached to side wave rails for adjustable positioning. Shoulder bolts on the rear tube slide into the wave rail slots, while quick-release pins secure the front tube, allowing the pedalbox to be adjusted to three distinct positions in seconds. The wave rails were precision-cut on a waterjet, reamed on a manual mill for accuracy, and formed using a sheet metal bender.</p>
-            </div>
-            <figure style="max-width:400px;width:100%;margin:0px auto;text-align:flex-start;position:relative;">
-            <div style="max-width:400px;width:100%;height:320px;display:flex;
-                        justify-content:center;overflow:hidden; text-align:flex-start;
-                        border-radius:8px;position:relative;margin:0 auto;">
-                <img src="/assets/img/uploads/rails.png" alt="brakecad"
-                    style="max-width:100%;height:auto;position:absolute;">
-            </div>
-            <!-- Caption -->
-            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                Side Wave Rails CAD
+                (1) All 3D-printed Components <br> (2) Motor Hub CAD <br> (3) Pulley Flanges CAD
             </figcaption>
             </figure>
         </div>
@@ -313,9 +299,8 @@ odefun = @(t, T) [
     });
   }
 
-  setupCarousel('left');
-  setupCarousel('right');
+  setupCarousel('first');
+  setupCarousel('second');
   setupCarousel('third');
   setupCarousel('fourth');
-  setupCarousel('fifth');
 </script>

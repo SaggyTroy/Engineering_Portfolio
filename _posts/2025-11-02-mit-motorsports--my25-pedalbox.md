@@ -25,9 +25,9 @@ paginate: false
             <p style="margin:0;">For the Model Year 2025 season, I was tasked with designing a <strong>custom pedalbox</strong> to integrate the throttle, brake, master cylinders, and potentiometers into a single, adjustable platform. This project required balancing <strong>structural strength</strong>, <strong>adjustability</strong>, and <strong>minimal weight</strong> to enhance driver control and vehicle performance.</p>
         </div>
     </div>
-    <img src="/assets/img/uploads/pedalbox.png" alt="Featured image" style="max-width:600px;width:100%;height:auto">
     <div style="flex:0;">
-        <h3 style="margin:0 0 0.5rem;">Design Overview</h3>
+        <h2 style="margin:0 0 0.5rem;text-align:center">Design Overview</h2>
+        <h3 style="margin:0 0 0.5rem;padding-top:0">Laying Out Design Requirements</h3>
         <p style="margin:0 0 0.5rem;">In the design process, I first started by identifying <strong>key design requirements</strong> that govern the overarching system, using information from the FSAE ruleset, data from an ergonomics testing jig, and feedback from the drivers themselves.</p>
         <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
             <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
@@ -66,7 +66,8 @@ paginate: false
             </figure>
         </div>
         <br>
-        <p style="margin:0 0 0.5rem;padding-top: 20px;">I then performed <strong>structural hand calculations</strong> to inform my modeling, drawing FBDs, analyzing shear and bending diagrams, and performing lug analyses. These calculations were used to optimize the mass and geometry of the system components to ensure minimal deflection while being able to withstand the heavy applied loads.</p>
+        <h3 style="margin:0 0 0.5rem;">Structural Calculations</h3>
+        <p style="margin:0 0 0.5rem;">I then performed <strong>structural hand calculations</strong> to inform my modeling, drawing FBDs, analyzing shear and bending diagrams, and performing lug analyses. These calculations were used to optimize the mass and geometry of the system components to ensure minimal deflection while being able to withstand the heavy applied loads.</p>
         <div class="carousel-pair"
             style="display:flex;justify-content:center;align-items:flex-start;gap:40px;flex-wrap:wrap;margin:20px auto;text-align:center;">
         <!-- ===== LEFT CAROUSEL ===== -->
@@ -127,12 +128,14 @@ paginate: false
             <img src="/assets/img/uploads/calcs.png" alt="brake calcs" class="post-cover" style="max-width:600px;width:100%;height:auto;flex:0 0 320px;display:block;margin:0 8px 0 0;">
         </div>
         <br>
-        <p style="margin:0 0 0.5rem;padding-top: 20px;">Lastly, after <strong>modeling the pedalbox in CAD using Siemens NX,</strong> I then <strong>manufactured all the components in-house with CNC machinery</strong>, utilizing the lathe, CNC mill, and waterjet to create all the parts with precision.</p>
+        <h3 style="margin:0 0 0.5rem;">CAD and Machining</h3>
+        <img src="/assets/img/uploads/pedalbox.png" alt="Featured image" style="max-width:600px;width:100%;height:auto;">
+        <p style="margin:0 0 0.5rem;">Lastly, after <strong>modeling the pedalbox in CAD using Siemens NX,</strong> I then <strong>manufactured all the components in-house with CNC machinery</strong>, utilizing the lathe, CNC mill, and waterjet to create all the parts with precision.</p>
         <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
             <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
                 <p style="margin:0;">An I-beam design for both the brake and throttle pedal was selected to optimize mass while maintaining structural rigidity. Torsional springs are attached to both to ensure smooth return travel. The pedals were machined from a solid aluminum block on a HAAS VF-2 CNC machine utilizing a CAM file. Custom soft jaws for the brake pedal were also created in the HAAS VF-2 to accommodate the multiple machining operations needed for the brake pedal.</p>
             </div>
-            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;">
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top: 0px">
             <div class="image-carousel"
                 style="max-width:400px;width:100%;height:320px;display:flex;
                         justify-content:center;align-items:center;overflow:hidden;
@@ -143,6 +146,8 @@ paginate: false
                 <img src="/assets/img/uploads/throttlecad.png" class="carousel-image fourth" alt="Ergo Design 3B"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
                 <img src="/assets/img/uploads/brakejaws.jpg" class="carousel-image fourth" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <img src="/assets/img/uploads/throttle_real.jpg" class="carousel-image fourth" alt="Ergo Design 3B"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
                 <!-- Controls -->
                 <button class="carousel-btn fourth-prev"
@@ -156,7 +161,7 @@ paginate: false
             </div>
             <!-- Caption -->
             <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                (1) Brake Pedal CAD - (2) Throttle Pedal CAD - (3) Custom-Made Soft Jaws for CNC Milling
+                (1) Brake Pedal CAD <br> (2) Throttle Pedal CAD <br> (3) Custom-Made Soft Jaws for CNC Milling <br> (4) Spacer for Constraining Torsion Springs on Throttle
             </figcaption>
             </figure>
         </div>
@@ -185,7 +190,7 @@ paginate: false
             </div>
             <!-- Caption -->
             <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                (1) Base Cylinders & Tabs CAD - (2) Side Plugs CAD - (3) Side View of Base
+                (1) Base Cylinders & Tabs CAD <br> (2) Side Plugs CAD <br> (3) Side View of Base
             </figcaption>
             </figure>
             <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
@@ -198,16 +203,29 @@ paginate: false
             <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
                 <p style="margin:0;">The pedalbox is mounted to the frame using quick-release pins attached to side wave rails for adjustable positioning. Shoulder bolts on the rear tube slide into the wave rail slots, while quick-release pins secure the front tube, allowing the pedalbox to be adjusted to three distinct positions in seconds. The wave rails were precision-cut on a waterjet, reamed on a manual mill for accuracy, and formed using a sheet metal bender.</p>
             </div>
-            <figure style="max-width:400px;width:100%;margin:0px auto;text-align:flex-start;position:relative;">
-            <div style="max-width:400px;width:100%;height:320px;display:flex;
-                        justify-content:center;overflow:hidden; text-align:flex-start;
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top: 0px">
+            <div class="image-carousel"
+                style="max-width:400px;width:100%;height:320px;display:flex;
+                        justify-content:center;align-items:center;overflow:hidden;
                         border-radius:8px;position:relative;margin:0 auto;">
-                <img src="/assets/img/uploads/rails.png" alt="brakecad"
-                    style="max-width:100%;height:auto;position:absolute;">
+                <!-- Images -->
+                <img src="/assets/img/uploads/rails.png" class="carousel-image sixth active" alt="brakecad"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                <img src="/assets/img/uploads/quick_release.jpg" class="carousel-image sixth" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <!-- Controls -->
+                <button class="carousel-btn sixth-prev"
+                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">‹</button>
+                <button class="carousel-btn sixth-next"
+                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">›</button>
             </div>
             <!-- Caption -->
             <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                Side Wave Rails CAD
+                (1) Side Wave Rails CAD <br> (2) Quick Release Fittings
             </figcaption>
             </figure>
         </div>
@@ -240,4 +258,5 @@ paginate: false
   setupCarousel('third');
   setupCarousel('fourth');
   setupCarousel('fifth');
+  setupCarousel('sixth');
 </script>
