@@ -4,8 +4,8 @@ layout: post
 title: "MIT Motorsports | AMY25 Power Steering"
 subtitle: Design Binder
 description: Design of novel power steering system to autonomously actuate a driverless car.
-image: /assets/img/uploads/powersteering.png
-optimized_image: /assets/img/uploads/powersteering.png
+image: /assets/img/uploads/ps_real.jpg
+optimized_image: /assets/img/uploads/ps_real.jpg
 category: motorsports
 tags:
     - autonomous_mech
@@ -22,12 +22,12 @@ paginate: false
         <img src="{{ page.image }}" alt="Featured image" class="post-cover" style="max-width:400px;width:100%;height:auto;flex:0 0 320px;display:block;margin:0 8px 0 0;">
         <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
             <h3 style="margin:0 0 0.5rem;padding-top: 0;">Introduction</h3>
-            <p style="margin:0;">For the Model Year 2026 season, my team is pioneering its <strong>first-ever driverless racecar</strong>, a significant leap toward competing in the Formula Student Driverless event. To enable real-world validation of our autonomous algorithms, I led the design, manufacturing, and integration of a <strong>high-torque power steering system</strong> for the MY25 race car. This retrofit replaces manual steering with an electromechanical actuator, enabling precise, rapid control and positioning MIT Motorsports for success in driverless racing. Additionally, as testing for the MY26 vehicle began early in the fall, the project ran over the summer term, offering a valuable opportunity to deliver under tight timelines and manage overlapping commitments.</p>
+            <p style="margin:0;">For the Model Year 2026 season, MIT Motorsports is pioneering its <strong>first-ever driverless racecar</strong>. To enable real-world validation of our autonomous algorithms, I led the <strong>design, manufacturing, and integration of a high-torque power steering system</strong> for the MY25 race car. This retrofit replaces manual steering with an electromechanical actuator, enabling precise, rapid control and positioning us for success in driverless racing.</p>
         </div>
     </div>
     <div style="flex:0;">
         <h2 style="margin:0 0 0.5rem; text-align: center">Sponsorship Outreach</h2>
-        <p style="margin:0 0 0.5rem;">Starting off this power steering project required <strong>emailing motor companies for possible sponsorships</strong>. As I was working with a very limited budget off the remaining funds from the MY25 season, securing a motor sponsorship was key to creating a reliable, robust system. After researching and emailing dozens of different companies, I was very fortunate to have secured a sponsorship with <strong>Maxon Motor</strong>, a motor company known for being a leading manufacturer of high-precision, high-quality electric drive systems. With this sponsorship, I not only secured a <strong>motor set valued at over $2500</strong> consisting of a BLDC Flat motor, a planetary gearbox, a MILE encoder, and a high-end motor controller, but I also guaranteed a <strong>continuing partnership and motor supply for the MY26 season.</strong></p>
+        <p style="margin:0 0 0.5rem;">Starting off this power steering project required emailing motor companies for possible sponsorships. As I was working with a very limited budget off the remaining funds from the MY25 season, securing a motor sponsorship was key to creating a reliable, robust system. After researching and emailing dozens of different companies, I was very fortunate to have secured a sponsorship with <strong>Maxon Motor</strong>, a leading manufacturer of high-precision, high-quality electric drive systems. With this sponsorship, I secured a <strong>motor set valued at over $2500</strong> consisting of a BLDC Flat motor, a planetary gearbox, a MILE encoder, and a high-end motor controller and also guaranteed a <strong>continuing partnership and motor supply for the MY26 season.</strong></p>
         <section style="display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;margin:40px auto;max-width:1200px;">
         <figure style="flex:1 1 45%;max-width:300px;text-align:center;margin:0;">
             <img src="/assets/img/uploads/motor.jpeg" alt="Left image"
@@ -48,9 +48,9 @@ paginate: false
             </figcaption>
         </figure>
         </section>
-        <h2 style="margin:0 0 0.5rem; text-align: center">Design Overview</h2>
+        <h2 style="margin:0 0 0.5rem; padding-top: 0;text-align: center">Design Overview</h2>
         <h3 style="margin:0 0 0.5rem;padding-top:0">Laying Out Design Requirements</h3>
-        <p style="margin:0 0 0.5rem;">For the design process of power steering, I first started by identifying <strong>key design requirements</strong> that govern the overarching system. To determine the <strong>steering torque</strong> required to actuate the car, I used a force sensor to measure the force required to turn the tires when the car is stationary, providing an upper bound for the torque requirement. To determine the <strong>steering speed</strong>, I used telemetry data from past competitions as well as GoPro footage of drivers on testing trips to get a rough estimate of the max steering speed required by the motor. These measurements allowed me to pick and size a capable motor for the system.</p>
+        <p style="margin:0 0 0.5rem;">I first started the project by identifying <strong>key design requirements</strong> that govern the overarching system. To determine the <strong>steering torque</strong> required to actuate the car, I used a force sensor to measure the force required to turn the tires when the car is stationary, providing an upper bound for the torque requirement. To determine the <strong>steering speed</strong>, I used telemetry data from past competitions as well as GoPro footage of drivers on testing trips to get a rough estimate of the max steering speed. <strong>These measurements allowed me to pick and size a capable motor for the system.</strong></p>
         <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
             <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
                 <h4 style="padding-top:0;padding-bottom: 0"> Some Key Design Requirements: </h4>
@@ -77,7 +77,7 @@ paginate: false
         </div>
         <br>
         <br>
-        <p style="margin:0 0 0.5rem;">Below is also a MATLAB Script I created to model the temperature of the motor over time given a constant power input. The script uses basic thermodynamic principles, modeling the system as a thermal circuit using a differential equation.</p>
+        <p style="margin:0 0 0.5rem;">Below is also a MATLAB Script I created to <strong>model the temperature of the motor over time</strong> given a constant power input. The script uses basic thermodynamic principles, modeling the system as a thermal circuit with a differential equation.</p>
         <section style="display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin:0 auto;max-width:1400px;padding:0;">
             <!-- ===== CODE BLOCK (LEFT, WIDER, NO BACKGROUND) ===== -->
             <div style="flex:1 1 65%;max-width:850px;color:#222;
@@ -146,7 +146,7 @@ odefun = @(t, T) [
             </figure>
         </section>
         <h3 style="margin:0 0 0.5rem;">Structural Calculations</h3>
-        <p style="margin:0 0 0.5rem;">Next in the design process, I performed <strong>structural hand calculations</strong> and <strong>belt/pulley selections</strong>. The structural calculations were a simple beam bending problem to determine the internal moment and shear forces as well as the maximum deflection. Resolution and backlash were big concerns for the performance of the autonomous system, so minimizing deflection and ensuring a properly sized and tensioned belt were vital to the design process.</p>
+        <p style="margin:0 0 0.5rem;">Next, I performed <strong>structural hand calculations</strong> and <strong>belt/pulley selections</strong>. The structural calculations were a simple beam bending problem to determine the internal moment and shear forces as well as the maximum deflection. Resolution and backlash were big concerns for the performance of the autonomous system, so minimizing deflection and ensuring a properly sized and tensioned belt were vital to the design process.</p>
         <figure style="max-width:900px;width:100%;margin:0px auto;text-align:center;position:relative;">
             <div class="image-carousel"
                 style="max-width:900px;width:100%;height:600px;display:flex;
@@ -174,24 +174,107 @@ odefun = @(t, T) [
             </figcaption>
         </figure>
         <h3 style="margin:0 0 0.5rem;">CAD and Manufacturing</h3>
-        <img src="/assets/img/uploads/powersteering.png" alt="Featured image" style="max-width:400px;width:100%;height:auto;">
-        <p style="margin:0 0 0.5rem;">Lastly, I used <strong>Onshape</strong> to model the power steering assembly in CAD, going through several design review presentations with the team to arrive to the final product. With the CAD ready, a manufacturing plan was set in place to fabricate all the components in-house, which entailed <strong>waterjetting plates</strong>, <strong>turning spacers</strong>, and <strong>milling pulleys.</strong></p>
-        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
-            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
-                <p style="margin:0;">The motor and belt system are mounted to the steering rack using two custom waterjetted plates. The bottom plate features a slotted interface that simplifies alignment and integration with the steering rack. The top plate incorporates a set of precisely positioned slots in an arc, designed to enable accurate belt pretensioning. Pretension is achieved by pivoting the assembly about one bolted joint, allowing controlled adjustment of belt tension and decoupling. </p>
-            </div>
+        <div style="display:flex;align-items:center;padding:0;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
+                <img src="/assets/img/uploads/powersteering.png" alt="Featured image" style="max-width:400px;width:100%;height:auto;">
+                <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                    Power Steering System Modeled in CAD
+                </figcaption>
+            </figure>
             <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
             <div class="image-carousel"
                 style="max-width:400px;width:100%;height:320px;display:flex;
                         justify-content:center;align-items:center;overflow:hidden;
                         border-radius:8px;position:relative;margin:0 auto;padding-top:0">
                 <!-- Images -->
-                <img src="/assets/img/uploads/ps_plates.png" class="carousel-image second active" alt="brakecad"
+                <img src="/assets/img/uploads/ps_real.jpg" class="carousel-image seventh active" alt="brakecad"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-                <img src="/assets/img/uploads/ps_topplate.png" class="carousel-image second" alt="Ergo Design 3B"
+                <img src="/assets/img/uploads/ps_real_top.jpg" class="carousel-image seventh" alt="Ergo Design 3B"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-                <img src="/assets/img/uploads/Top_Plate_Drawing.png" class="carousel-image second" alt="Ergo Design 3B"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">\
+                <img src="/assets/img/uploads/ps_real_side.jpg" class="carousel-image seventh" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <!-- Controls -->
+                <button class="carousel-btn seventh-prev"
+                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">‹</button>
+                <button class="carousel-btn seventh-next"
+                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">›</button>
+            </div>
+            <!-- Caption -->
+            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                Assembled Power Steering System!
+            </figcaption>
+            </figure>
+            </div>
+        </div>
+        <p style="margin:0 0 0.5rem;padding-top:0">Lastly, I used <strong>Onshape</strong> to model the power steering assembly in CAD, going through several design review presentations with the team to arrive to the final product. With the CAD ready, a manufacturing plan was set to fabricate the components in-house, requiring <strong>waterjetting plates</strong>, <strong>turning spacers</strong>, and <strong>milling pulleys.</strong></p>
+        <figure>
+            <div class="image-carousel"
+                style="max-width:100%;width:800px;height:500px;display:flex;overflow:hidden;
+                        border-radius:8px;position:relative;margin:0 auto;">
+                <!-- Images -->
+                <img src="/assets/img/uploads/ps_exploded1.jpg" class="carousel-image eighth active" alt="brakecad"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                <img src="/assets/img/uploads/ps_exploded2.jpg" class="carousel-image eighth" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <img src="/assets/img/uploads/ps_exploded3.jpg" class="carousel-image eighth" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <!-- Controls -->
+                <button class="carousel-btn eighth-prev"
+                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">‹</button>
+                <button class="carousel-btn eighth-next"
+                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">›</button>
+            </div>
+            <!-- Caption -->
+            <figcaption style="padding:20px;font-size:0.95rem;color:#555;">
+                Exploded Views!!
+            </figcaption>
+        </figure>
+        <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
+                <h4 style="margin:0; padding-top:0"> Mounting Plates </h4>
+                <p style="margin:0;">The motor and belt system are mounted to the steering rack using two custom waterjetted plates. The bottom plate features a slotted interface that simplifies alignment and integration with the steering rack. The top plate incorporates a set of precisely positioned slots in an arc, designed to enable accurate belt pretensioning. Pretension is achieved by pivoting the assembly about one bolted joint, allowing controlled adjustment of belt tension and decoupling. </p>
+            </div>
+        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;padding-top:10px">
+        <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
+            <div class="image-carousel"
+                style="max-width:400px;width:100%;height:320px;display:flex;
+                        justify-content:center;align-items:center;overflow:hidden;
+                        border-radius:8px;position:relative;margin:0 auto;padding-top:0">
+                <!-- Images -->
+                <img src="/assets/img/uploads/top_plate_real.jpg" class="carousel-image ninth active" alt="brakecad"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                <img src="/assets/img/uploads/Top_Plate_Drawing.png" class="carousel-image ninth" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <!-- Controls -->
+                <button class="carousel-btn ninth-prev"
+                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">‹</button>
+                <button class="carousel-btn ninth-next"
+                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">›</button>
+            </div>
+            <!-- Caption -->
+            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                (1) Top Mounting Plate <br> (2) Top Plate Technical Drawing
+            </figcaption>
+            </figure>
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
+            <div class="image-carousel"
+                style="max-width:400px;width:100%;height:320px;display:flex;
+                        justify-content:center;align-items:center;overflow:hidden;
+                        border-radius:8px;position:relative;margin:0 auto;padding-top:0">
+                <!-- Images -->
+                <img src="/assets/img/uploads/bottom_plate_real.jpg" class="carousel-image second active" alt="brakecad"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
                 <img src="/assets/img/uploads/Bottom_Plate_Drawing.png" class="carousel-image second" alt="Ergo Design 3B"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
                 <!-- Controls -->
@@ -206,11 +289,15 @@ odefun = @(t, T) [
             </div>
             <!-- Caption -->
             <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                (1) Mounting Plates Iso View CAD <br> (2) Mounting Plates with Arc Slots Top View CAD <br> (3) Top Plate Technical Drawing <br> (4) Bottom Plate Technical Drawing
+                (1) Bottom Mounting Plate <br> (2) Bottom Plate Technical Drawing
             </figcaption>
             </figure>
         </div>
-        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
+        <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
+                <h4 style="margin:0; padding-top:0"> Pulleys </h4>
+                <p style="margin:0;">To enable belt-driven actuation, system components were modified to mount pulleys onto both the steering column and motor shaft. For the steering column, I used a manual mill to match-drill and ream a through-hole in the pulley and column. This created a very smooth, tight, and snug fit for a shoulder bolt to secure the assembly. For the motor shaft, broaching was initially considered to create the keyseat (which would've been awesome) but no machine shops on campus had the correct size. Instead, due to budget constraints, I ordered and used an extended-length endmill to machine the keyseat directly into the pulley.</p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;padding-top:10px;padding-bottom:0">
             <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
             <div class="image-carousel"
                 style="max-width:400px;width:100%;height:320px;display:flex;
@@ -219,7 +306,7 @@ odefun = @(t, T) [
                 <!-- Images -->
                 <img src="/assets/img/uploads/steering_column.jpg" class="carousel-image third active" alt="brakecad"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-                <img src="/assets/img/uploads/ps_column.png" class="carousel-image third" alt="Ergo Design 3B"
+                <img src="/assets/img/uploads/match_drill_2.png" class="carousel-image third" alt="Ergo Design 3B"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
                 <img src="/assets/img/uploads/match_drill.jpg" class="carousel-image third" alt="Ergo Design 3B"
                     style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
@@ -235,16 +322,41 @@ odefun = @(t, T) [
             </div>
             <!-- Caption -->
             <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                (1) Steering Column and Pulley Mounted Together <br> (2) Steering Column and Pulley CAD <br> (3) Manual Mill Setup for Match-drill
+                (1) Steering Column and Pulley Mounted Together <br> (2) Shoulder Bolt with Pulley <br> (3) Manual Mill Setup for Match-drill
             </figcaption>
             </figure>
-            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
-                <p style="margin:0;">To enable belt-driven actuation, system components were modified to mount pulleys onto both the steering column and motor shaft. For the steering column, I used a manual mill to match-drill and ream a through-hole in the pulley and column. This created a very smooth, tight, and snug fit for a shoulder bolt to secure the assembly. For the motor shaft, broaching was initially considered to create the keyseat (which would have been awesome) but none of the machine shops had the correct size. Instead, due to budget constraints, I ordered and used an extended-length endmill to machine the keyseat directly into the pulley.</p>
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
+            <div class="image-carousel"
+                style="max-width:400px;width:100%;height:320px;display:flex;
+                        justify-content:center;align-items:center;overflow:hidden;
+                        border-radius:8px;position:relative;margin:0 auto;">
+                <!-- Images -->
+                <img src="/assets/img/uploads/keyslot1.jpg" class="carousel-image fifth active" alt="brakecad"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                <img src="/assets/img/uploads/keyslot2.jpg" class="carousel-image fifth" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <img src="/assets/img/uploads/motorpulley.jpg" class="carousel-image fifth" alt="Ergo Design 3B"
+                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                <!-- Controls -->
+                <button class="carousel-btn fifth-prev"
+                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">‹</button>
+                <button class="carousel-btn fifth-next"
+                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                            width:30px;height:30px;cursor:pointer;">›</button>
             </div>
+            <!-- Caption -->
+            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                (1) Motor Pulley and Toe Clamp Setup on Manual Mill <br> (2) Keyseat In Pulley After Milling <br> (3) Motor Pulley + 3D Printed Flanges
+            </figcaption>
+            </figure>
         </div>
         <br>
         <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
             <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
+                <h4 style="margin:0; padding-top:0"> 3D Printed Components </h4>
                 <p style="margin:0;">Several 3D-printed components were fabricated to support various aspects of the system. A column sleeve was printed to act as a spacer, ensuring proper pulley height alignment on the steering column. A custom motor hub and cover were designed to provide light water protection—particularly important given the motor’s outrunner configuration. Additionally, pulley flanges were printed as a precautionary measure to mitigate belt slippage. All parts were produced using a Bambu X1-Carbon printer.</p>
             </div>
             <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
@@ -274,7 +386,6 @@ odefun = @(t, T) [
                 (1) All 3D-printed Components <br> (2) Motor Hub CAD <br> (3) Pulley Flanges CAD
             </figcaption>
             </figure>
-        </div>
     </div>
 </div>
 
@@ -300,7 +411,12 @@ odefun = @(t, T) [
   }
 
   setupCarousel('first');
+  setupCarousel('seventh');
+  setupCarousel('eighth');
+  setupCarousel('ninth');
   setupCarousel('second');
   setupCarousel('third');
   setupCarousel('fourth');
+  setupCarousel('fifth');
+  setupCarousel('sixth');
 </script>
