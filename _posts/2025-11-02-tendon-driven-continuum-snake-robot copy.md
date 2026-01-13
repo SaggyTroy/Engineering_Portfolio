@@ -6,7 +6,7 @@ subtitle: Design Overview
 description: Design of a tendon-driven robot to understand continuum mechanics.
 image: /assets/img/uploads/snake.jpg
 optimized_image: /assets/img/uploads/snake.jpg
-category: personal_projs
+category: Personal Projects
 tags:
     - continuum_mechanics
     - motor_control
