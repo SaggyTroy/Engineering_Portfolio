@@ -8,10 +8,8 @@ image: /assets/img/uploads/ps_real.jpg
 optimized_image: /assets/img/uploads/ps_real.jpg
 category: motorsports
 tags:
-    - autonomous_mech
-    - machining
+    - autonomous_mechanisms
     - motors
-    - structures
     - CAD
 author: josephmei
 paginate: false
@@ -182,33 +180,32 @@ odefun = @(t, T) [
                 </figcaption>
             </figure>
             <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
-            <div class="image-carousel"
-                style="max-width:400px;width:100%;height:320px;display:flex;
-                        justify-content:center;align-items:center;overflow:hidden;
-                        border-radius:8px;position:relative;margin:0 auto;padding-top:0">
-                <!-- Images -->
-                <img src="/assets/img/uploads/ps_real.jpg" class="carousel-image seventh active" alt="brakecad"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-                <img src="/assets/img/uploads/ps_real_top.jpg" class="carousel-image seventh" alt="Ergo Design 3B"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-                <img src="/assets/img/uploads/ps_real_side.jpg" class="carousel-image seventh" alt="Ergo Design 3B"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-                <!-- Controls -->
-                <button class="carousel-btn seventh-prev"
-                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
-                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:30px;height:30px;cursor:pointer;">‹</button>
-                <button class="carousel-btn seventh-next"
-                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
-                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:30px;height:30px;cursor:pointer;">›</button>
-            </div>
-            <!-- Caption -->
-            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                Assembled Power Steering System!
-            </figcaption>
+                <div class="image-carousel"
+                    style="max-width:400px;width:100%;height:320px;display:flex;
+                            justify-content:center;align-items:center;overflow:hidden;
+                            border-radius:8px;position:relative;margin:0 auto;padding-top:0">
+                    <!-- Images -->
+                    <img src="/assets/img/uploads/ps_real.jpg" class="carousel-image seventh active" alt="brakecad"
+                        style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                    <img src="/assets/img/uploads/ps_real_top.jpg" class="carousel-image seventh" alt="Ergo Design 3B"
+                        style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                    <img src="/assets/img/uploads/ps_real_side.jpg" class="carousel-image seventh" alt="Ergo Design 3B"
+                        style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                    <!-- Controls -->
+                    <button class="carousel-btn seventh-prev"
+                            style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                                background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                                width:30px;height:30px;cursor:pointer;">‹</button>
+                    <button class="carousel-btn seventh-next"
+                            style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                                background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                                width:30px;height:30px;cursor:pointer;">›</button>
+                </div>
+                <!-- Caption -->
+                <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                    Assembled Power Steering System!
+                </figcaption>
             </figure>
-            </div>
         </div>
         <p style="margin:0 0 0.5rem;padding-top:0">Lastly, I used <strong>Onshape</strong> to model the power steering assembly in CAD, going through several design review presentations with the team to arrive to the final product. With the CAD ready, a manufacturing plan was set to fabricate the components in-house, requiring <strong>waterjetting plates</strong>, <strong>turning spacers</strong>, and <strong>milling pulleys.</strong></p>
         <figure>
@@ -238,59 +235,59 @@ odefun = @(t, T) [
             </figcaption>
         </figure>
         <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
-                <h4 style="margin:0; padding-top:0"> Mounting Plates </h4>
-                <p style="margin:0;">The motor and belt system are mounted to the steering rack using two custom waterjetted plates. The bottom plate features a slotted interface that simplifies alignment and integration with the steering rack. The top plate incorporates a set of precisely positioned slots in an arc, designed to enable accurate belt pretensioning. Pretension is achieved by pivoting the assembly about one bolted joint, allowing controlled adjustment of belt tension and decoupling. </p>
-            </div>
+            <h4 style="margin:0; padding-top:0"> Mounting Plates </h4>
+            <p style="margin:0;">The motor and belt system are mounted to the steering rack using two custom waterjetted plates. The bottom plate features a slotted interface that simplifies alignment and integration with the steering rack. The top plate incorporates a set of precisely positioned slots in an arc, designed to enable accurate belt pretensioning. Pretension is achieved by pivoting the assembly about one bolted joint, allowing controlled adjustment of belt tension and decoupling. </p>
+        </div>
         <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;padding-top:10px">
-        <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
-            <div class="image-carousel"
-                style="max-width:400px;width:100%;height:320px;display:flex;
-                        justify-content:center;align-items:center;overflow:hidden;
-                        border-radius:8px;position:relative;margin:0 auto;padding-top:0">
-                <!-- Images -->
-                <img src="/assets/img/uploads/top_plate_real.jpg" class="carousel-image ninth active" alt="brakecad"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-                <img src="/assets/img/uploads/Top_Plate_Drawing.png" class="carousel-image ninth" alt="Ergo Design 3B"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-                <!-- Controls -->
-                <button class="carousel-btn ninth-prev"
-                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
-                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:30px;height:30px;cursor:pointer;">‹</button>
-                <button class="carousel-btn ninth-next"
-                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
-                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:30px;height:30px;cursor:pointer;">›</button>
-            </div>
-            <!-- Caption -->
-            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                (1) Top Mounting Plate <br> (2) Top Plate Technical Drawing
-            </figcaption>
+            <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
+                <div class="image-carousel"
+                    style="max-width:400px;width:100%;height:320px;display:flex;
+                            justify-content:center;align-items:center;overflow:hidden;
+                            border-radius:8px;position:relative;margin:0 auto;padding-top:0">
+                    <!-- Images -->
+                    <img src="/assets/img/uploads/top_plate_real.jpg" class="carousel-image ninth active" alt="brakecad"
+                        style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                    <img src="/assets/img/uploads/Top_Plate_Drawing.png" class="carousel-image ninth" alt="Ergo Design 3B"
+                        style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                    <!-- Controls -->
+                    <button class="carousel-btn ninth-prev"
+                            style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                                background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                                width:30px;height:30px;cursor:pointer;">‹</button>
+                    <button class="carousel-btn ninth-next"
+                            style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                                background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                                width:30px;height:30px;cursor:pointer;">›</button>
+                </div>
+                <!-- Caption -->
+                <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                    (1) Top Mounting Plate <br> (2) Top Plate Technical Drawing
+                </figcaption>
             </figure>
             <figure style="max-width:400px;width:100%;margin:40px auto;text-align:center;position:relative;margin-top:0">
-            <div class="image-carousel"
-                style="max-width:400px;width:100%;height:320px;display:flex;
-                        justify-content:center;align-items:center;overflow:hidden;
-                        border-radius:8px;position:relative;margin:0 auto;padding-top:0">
-                <!-- Images -->
-                <img src="/assets/img/uploads/bottom_plate_real.jpg" class="carousel-image second active" alt="brakecad"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
-                <img src="/assets/img/uploads/Bottom_Plate_Drawing.png" class="carousel-image second" alt="Ergo Design 3B"
-                    style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
-                <!-- Controls -->
-                <button class="carousel-btn second-prev"
-                        style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
-                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:30px;height:30px;cursor:pointer;">‹</button>
-                <button class="carousel-btn second-next"
-                        style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
-                            background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
-                            width:30px;height:30px;cursor:pointer;">›</button>
-            </div>
-            <!-- Caption -->
-            <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
-                (1) Bottom Mounting Plate <br> (2) Bottom Plate Technical Drawing
-            </figcaption>
+                <div class="image-carousel"
+                    style="max-width:400px;width:100%;height:320px;display:flex;
+                            justify-content:center;align-items:center;overflow:hidden;
+                            border-radius:8px;position:relative;margin:0 auto;padding-top:0">
+                    <!-- Images -->
+                    <img src="/assets/img/uploads/bottom_plate_real.jpg" class="carousel-image second active" alt="brakecad"
+                        style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:1;">
+                    <img src="/assets/img/uploads/Bottom_Plate_Drawing.png" class="carousel-image second" alt="Ergo Design 3B"
+                        style="max-width:100%;height:auto;position:absolute;transition:opacity 0.6s ease;opacity:0;">
+                    <!-- Controls -->
+                    <button class="carousel-btn second-prev"
+                            style="position:absolute;top:50%;left:10px;transform:translateY(-50%);
+                                background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                                width:30px;height:30px;cursor:pointer;">‹</button>
+                    <button class="carousel-btn second-next"
+                            style="position:absolute;top:50%;right:10px;transform:translateY(-50%);
+                                background:rgba(0,0,0,0.4);color:white;border:none;border-radius:50%;
+                                width:30px;height:30px;cursor:pointer;">›</button>
+                </div>
+                <!-- Caption -->
+                <figcaption style="margin-top:8px;font-size:0.95rem;color:#555;">
+                    (1) Bottom Mounting Plate <br> (2) Bottom Plate Technical Drawing
+                </figcaption>
             </figure>
         </div>
         <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">

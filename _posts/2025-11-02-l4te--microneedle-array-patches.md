@@ -10,8 +10,7 @@ category: internships
 tags:
     - medical_devices
     - research
-    - compression_molding
-    - CAD
+    - microfabrication
 author: josephmei
 paginate: false
 ---

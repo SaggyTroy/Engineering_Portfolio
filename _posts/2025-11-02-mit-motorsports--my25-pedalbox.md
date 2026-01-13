@@ -122,8 +122,8 @@ paginate: false
         </figure>
         </div>
         <div style="display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;box-sizing:border-box;">
-            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb;border-radius:6px;box-sizing:border-box;">
-                <p style="margin:0;">This is an example of a calculation performed to determine the necessary size of the brake pedal. After completing a force and moment balance to determine the reaction forces, various cuts were taken along the pedal to determine the max shear and tensile forces as well as deflection. This then informed the necessary sizing of the pedal's cross-sectional geometry.</p>
+            <div style="flex:1;min-width:220px;border:1px solid #e6e6e6;padding:16px;background:#fbfbfb; border-radius:6px;box-sizing:border-box;">
+                <p style="margin:0;">This is an example of a calculation performed to determine the necessary size various cuts were taken along the pedal to determine the max shear and tensile forces as well as deflection. This then informed the necessary sizing of the pedal's cross-sectional geometry.</p>
             </div>
             <img src="/assets/img/uploads/calcs.png" alt="brake calcs" class="post-cover" style="max-width:600px;width:100%;height:auto;flex:0 0 320px;display:block;margin:0 8px 0 0;">
         </div>
